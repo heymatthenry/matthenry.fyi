@@ -17,7 +17,7 @@ layout: home.njk
 		  {%- endif -%}
 		  {{ post.data.title }}
 	  </h1>
-	  <time datetime="{{ post.date }}">{{ post.date | postDate }}</time>
+	  <time datetime="{{ post.date | timestamp }}">{{ post.date | postDate }}</time>
 	  {{ post.content }}
 	</article>
 {%- endfor -%}

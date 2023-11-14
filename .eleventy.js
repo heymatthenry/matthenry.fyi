@@ -5,6 +5,10 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
 
+  eleventyConfig.addFilter('timestamp', (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toFormat('yyyy-MM-dd');
+  });
+
   return {
     dir: {
       input: 'src',
