@@ -162,8 +162,11 @@
   }
 
   .post-date {
+    border: 1px solid;
+    border-radius: 6px;
     font-weight: 100;
     font-size: var(--step-0);
+    padding: .2em .4em;
   }
 
   abbr[title='Today I learned'] {
