@@ -1,0 +1,20 @@
+---
+title: FYI
+layout: home.njk
+---
+
+{%- for post in collections.post | reverse -%}
+	<article>
+	  <h2>
+		  {% if 'link' in post.data.tags %}
+		      	&#128279; <a href="{{ post.data.link_url }}">{{ post.data.title }} &rarr;</a>
+		  {% elseif 'til' in post.data.tags %}
+			<abbr title="Today I learned">TIL</abbr> <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+		  {% else %}
+		     <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+		  {% endif %}
+	  </h2>
+	  {{ post.content | safe }}
+	  <p class="post-date">Originally written on <time datetime="{{ post.date | timestamp }}">{{ post.date | postDate }}</time></p>
+	</article>
+{%- endfor -%}

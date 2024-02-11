@@ -37,7 +37,7 @@
   }
 
   .site-title,
-  article > :not(.full-bleed) {
+  article> :not(.full-bleed) {
     grid-column: 2;
   }
 
@@ -65,13 +65,12 @@
   }
 
   a:hover {
-    background: linear-gradient(
-      0.25turn,
-      var(--gradient-start),
-      var(--gradient-end)
-    );
+    background: linear-gradient(0.25turn,
+        var(--gradient-start),
+        var(--gradient-end));
     color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
@@ -99,6 +98,52 @@
     color: #e1341e;
     font-size: var(--step-4);
     line-height: 3rem;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  article h2:has(+p, +blockquote) {
+    margin-bottom: 0;
+  }
+
+  article {
+    margin-bottom: 1.5em;
+
+    time {
+      margin-bottom: .5em;
+    }
+
+    h3 {
+      margin: 0;
+    }
+
+    p:has(+h3) {
+      margin-bottom: 2em;
+    }
+
+    blockquote {
+      background: linear-gradient(0.25turn, var(--pink), var(--blue));
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: "Work Sans", sans-serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      position: relative;
+    }
+
+    blockquote:before {
+      -webkit-text-fill-color: var(--pink);
+      content: "\201C";
+      font-size: 8rem;
+      line-height: 0.1rem;
+      position: absolute;
+      top: 50%;
+      left: -4rem;
+    }
   }
 
   .subhed {
@@ -116,9 +161,9 @@
     line-height: 1.4em;
   }
 
-  article time {
+  .post-date {
     font-weight: 100;
-    font-size: var(--step-1);
+    font-size: var(--step-0);
   }
 
   abbr[title='Today I learned'] {
@@ -126,7 +171,6 @@
     border-radius: 0.12em;
     color: #fff;
     display: inline-block;
-    margin-inline-end: 0.5em;
     font-size: 0.7em;
     padding: 0.05em 0.2em;
     text-decoration: none;
