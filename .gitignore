@@ -1,2 +1,4 @@
 node_modules/
 src/**/*.html
+_site/**
+src/css/normalize.css

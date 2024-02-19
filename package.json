@@ -7,22 +7,19 @@
     "prestart": "run-s clean",
     "start": "run-p *:dev",
     "prebuild": "run-s clean",
-    "build": "NODE_ENV=production run-s eleventy:build vite:build",
+    "build": "NODE_ENV=production run-s eleventy:build",
     "clean": "run-s clean:files clean:empty",
     "clean:files": "del 'src/**/*.html' public",
     "clean:empty": "delete-empty src",
     "eleventy:dev": "eleventy --watch",
-    "eleventy:build": "eleventy",
-    "vite:dev": "vite",
-    "vite:build": "vite build"
+    "eleventy:build": "eleventy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "normalize.css": "^8.0.1",
-    "vite": "^4.5.0"
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "del-cli": "^5.1.0",
