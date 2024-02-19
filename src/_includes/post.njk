@@ -1,0 +1,17 @@
+---
+layout: base.njk
+---
+
+<article>
+  <h2>
+    {% if 'link' in tags %}
+          &#128279; <a href="{{ link_url }}">{{ title }} &rarr;</a>
+    {% elseif 'til' in tags %}
+    <abbr title="Today I learned">TIL</abbr> <a href="{{ url | url }}">{{ title }}</a>
+    {% else %}
+       <a href="{{ url | url }}">{{ title }}</a>
+    {% endif %}
+  </h2>
+  {{ content | safe }}
+  <p class="post-date">Originally written on <time datetime="{{ page.date | timestamp }}">{{ page.date | postDate }}</time></p>
+</article>
