@@ -99,10 +99,10 @@
     font-size: var(--step-4);
     line-height: 3rem;
 
-    a {
+    :is(a) {
       text-decoration: none;
 
-      svg {
+      :is(svg) {
         height: 2rem;
       }
     }
@@ -123,11 +123,11 @@
   article {
     margin-bottom: 1.5em;
 
-    time {
+    :is(time) {
       margin-bottom: .5em;
     }
 
-    h3 {
+    :is(h3) {
       color: var(--pink);
       margin: 0;
     }
