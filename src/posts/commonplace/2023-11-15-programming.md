@@ -5,4 +5,6 @@ date: 2023-11-15
 link_url: 'https://www.todayintabs.com/p/its-giving-tabs'
 ---
 
-> The basic skill of programming is not writing code, it's solving incredibly tedious puzzles over and over every day for years to produce a new app that everyone will hate being forced to use.
+<blockquote class="pullquote">
+    The basic skill of programming is not writing code, it's solving incredibly tedious puzzles over and over every day for years to produce a new app that everyone will hate being forced to use.
+</blockquote>

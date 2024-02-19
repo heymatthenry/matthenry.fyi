@@ -101,6 +101,18 @@
 
     a {
       text-decoration: none;
+
+      svg {
+        height: 2rem;
+      }
+    }
+
+    a:hover svg {
+      color: var(--pink);
+    }
+
+    .arrow {
+      font-size: 2rem;
     }
   }
 
@@ -123,7 +135,7 @@
       margin-bottom: 2em;
     }
 
-    blockquote {
+    blockquote.pullquote {
       background: linear-gradient(0.25turn, var(--pink), var(--blue));
       color: transparent;
       -webkit-background-clip: text;
@@ -135,7 +147,7 @@
       position: relative;
     }
 
-    blockquote:before {
+    blockquote.pullquote:before {
       -webkit-text-fill-color: var(--pink);
       content: "\201C";
       font-size: 8rem;
@@ -177,10 +189,6 @@
     font-size: 0.7em;
     padding: 0.05em 0.2em;
     text-decoration: none;
-  }
-
-  abbr[title='Today I learned']::before {
-    content: '\1F914';
   }
 
   pre {

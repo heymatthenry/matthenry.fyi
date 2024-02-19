@@ -5,8 +5,9 @@ layout: base.njk
 <article>
   <h2>
     {% if 'link' in tags %}
-          &#128279; <a href="{{ link_url }}">{{ title }} &rarr;</a>
+       <a href="{{ link_url }}">{{ title }} <span class="arrow">&rarr;</span></a>
     {% elseif 'til' in tags %}
+
     <abbr title="Today I learned">TIL</abbr> <a href="{{ url | url }}">{{ title }}</a>
     {% else %}
        <a href="{{ url | url }}">{{ title }}</a>
