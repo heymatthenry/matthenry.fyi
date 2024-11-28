@@ -2,10 +2,12 @@
 <html>
 <head>
 	<title>{{ title }}</title>
+	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/main.css">
   <meta charset="UTF-8">
+	<meta name="generator" content="{{ eleventy.generator }}">
 </head>
-<body>
+<body class="{{ page_name }}">
     <header>
 	    <div class="site-title">
 		    MH, FYI
