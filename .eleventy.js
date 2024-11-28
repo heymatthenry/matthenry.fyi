@@ -9,11 +9,8 @@ export default function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
   });
 
-  // eleventyConfig.addPassthroughCopy({ "src/css": "css" });
-  eleventyConfig.addPassthroughCopy({
-    "node_modules/normalize.css/normalize.css": "css/normalize.css",
-    "src/css/main.css": "css/main.css",
-  });
+  eleventyConfig.addWatchTarget("./src/css/");
+  eleventyConfig.addPassthroughCopy("./src/css/");
 
   return {
     dir: {

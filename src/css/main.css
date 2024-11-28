@@ -1,6 +1,6 @@
 @layer normalize, mh;
 
-@import 'normalize.css' layer(normalize);
+@import "normalize.css" layer(normalize);
 
 @layer mh {
   :root {
@@ -37,7 +37,7 @@
   }
 
   .site-title,
-  article> :not(.full-bleed) {
+  article > :not(.full-bleed) {
     grid-column: 2;
   }
 
@@ -48,16 +48,17 @@
 
   body {
     background-color: var(--off-white);
-    box-shadow:
-      inset 0px 5px 0 var(--pink),
-      inset 0px 10px 0px var(--blue);
+    box-shadow: inset 0px 5px 0 var(--pink), inset 0px 10px 0px var(--blue);
     color: #4c3e45;
     font-family: var(--sans-serif);
     padding-block-start: 2rem;
   }
 
   a {
-    color: var(--blue);
+    color: black;
+    text-decoration-color: var(--pink);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
   }
 
   a:hover {
@@ -65,9 +66,11 @@
   }
 
   a:hover {
-    background: linear-gradient(0.25turn,
-        var(--gradient-start),
-        var(--gradient-end));
+    background: linear-gradient(
+      0.25turn,
+      var(--gradient-start),
+      var(--gradient-end)
+    );
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -100,6 +103,7 @@
     line-height: 3rem;
 
     :is(a) {
+      color: var(--blue);
       text-decoration: none;
 
       :is(svg) {
@@ -116,7 +120,7 @@
     }
   }
 
-  article h2:has(+p, +blockquote) {
+  article h2:has(+ p, + blockquote) {
     margin-bottom: 0;
   }
 
@@ -124,7 +128,7 @@
     margin-bottom: 1.5em;
 
     :is(time) {
-      margin-bottom: .5em;
+      margin-bottom: 0.5em;
     }
 
     :is(h3) {
@@ -132,7 +136,7 @@
       margin: 0;
     }
 
-    p:has(+h3) {
+    p:has(+ h3) {
       margin-bottom: 2em;
     }
 
@@ -168,9 +172,6 @@
 
   main {
     font-size: var(--step-0);
-  }
-
-  main p {
     line-height: 1.4em;
   }
 
@@ -179,10 +180,10 @@
     border-radius: 6px;
     font-weight: 100;
     font-size: var(--step-0);
-    padding: .2em .4em;
+    padding: 0.2em 0.4em;
   }
 
-  abbr[title='Today I learned'] {
+  abbr[title="Today I learned"] {
     background-color: var(--blue);
     border-radius: 0.12em;
     color: #fff;
@@ -195,9 +196,7 @@
   pre {
     background-color: #111;
     border-radius: 0.12em;
-    box-shadow:
-      5px 5px 0 var(--pink),
-      10px 10px 0 var(--blue);
+    box-shadow: 5px 5px 0 var(--pink), 10px 10px 0 var(--blue);
     color: #efefef;
     font-family: monospace;
     font-size: var(--step--1);
