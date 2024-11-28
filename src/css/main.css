@@ -86,11 +86,17 @@
   }
 
   .site-title {
-    font-size: var(--step-5);
     color: var(--pink);
     font-size: 8rem;
     font-style: normal;
+    margin: 6rem 0;
     text-shadow: 3px 3px 0px var(--blue);
+    transform: rotate(-3deg);
+
+    svg {
+      height: 10rem;
+      vertical-align: top;
+    }
   }
 
   h1:has(+ time) {
