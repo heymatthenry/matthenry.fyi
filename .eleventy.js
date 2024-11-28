@@ -1,6 +1,6 @@
-const { DateTime } = require("luxon");
+import { DateTime } from "luxon";
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
@@ -21,4 +21,4 @@ module.exports = function (eleventyConfig) {
       output: "_site",
     },
   };
-};
+}
