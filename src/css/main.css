@@ -20,14 +20,18 @@
     --step-3: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
     --step-4: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
     --step-5: clamp(2.8rem, calc(2.45rem + 1.77vw), 3.82rem);
+    --step-huge: clamp(3.05rem, calc(6.05rem + 1.85vw), 8rem);
 
-    --pink: hsl(331, 84%, 52%);
-    --blue: hsl(188, 93%, 37%);
-    --transparent-blue: hsl(188, 93%, 37%, 10%);
-    --transparent-pink: hsl(331, 84%, 52%, 10%);
+    --base-bg: hsl(50, 45%, 87%);
+    --body-text: #4c3e45;
+    --primary-accent: hsl(331, 84%, 72%);
+    --secondary-accent: hsl(188, 93%, 42%);
+    --secondary-accent-transparent: hsl(188, 93%, 37%, 10%);
+    --primary-accent-transparent: hsl(331, 84%, 52%, 10%);
 
-    --gradient-start: var(--pink);
-    --gradient-end: var(--blue);
+    --gradient-start: var(--primary-accent);
+    --gradient-end: var(--secondary-accent);
+    color-scheme: light dark;
   }
 
   header,
@@ -47,16 +51,16 @@
   }
 
   body {
-    background-color: var(--off-white);
-    box-shadow: inset 0px 5px 0 var(--pink), inset 0px 10px 0px var(--blue);
-    color: #4c3e45;
+    box-shadow: inset 0px 5px 0 var(--primary-accent),
+      inset 0px 10px 0px var(--secondary-accent);
+    color: var(--body-text);
     font-family: var(--sans-serif);
     padding-block-start: 2rem;
   }
 
   a {
     color: black;
-    text-decoration-color: var(--pink);
+    text-decoration-color: var(--primary-accent);
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
   }
@@ -78,7 +82,7 @@
   }
 
   a:focus {
-    outline: 2px dotted var(--blue);
+    outline: 2px dotted var(--secondary-accent);
   }
 
   h1 {
@@ -86,11 +90,11 @@
   }
 
   .site-title {
-    color: var(--pink);
-    font-size: 8rem;
+    color: var(--primary-accent);
+    font-size: var(--step-huge);
     font-style: normal;
     margin: 6rem 0;
-    text-shadow: 3px 3px 0px var(--blue);
+    text-shadow: 3px 3px 0px var(--secondary-accent);
     transform: rotate(-3deg);
 
     svg {
@@ -109,7 +113,7 @@
     line-height: 3rem;
 
     :is(a) {
-      color: var(--blue);
+      color: var(--secondary-accent);
       text-decoration: none;
 
       :is(svg) {
@@ -118,7 +122,7 @@
     }
 
     a:hover svg {
-      color: var(--pink);
+      color: var(--primary-accent);
     }
 
     .arrow {
@@ -138,7 +142,7 @@
     }
 
     :is(h3) {
-      color: var(--pink);
+      color: var(--primary-accent);
       margin: 0;
     }
 
@@ -147,7 +151,11 @@
     }
 
     blockquote.pullquote {
-      background: linear-gradient(0.25turn, var(--pink), var(--blue));
+      background: linear-gradient(
+        0.25turn,
+        var(--primary-accent),
+        var(--primary-accent)
+      );
       color: transparent;
       -webkit-background-clip: text;
       background-clip: text;
@@ -159,7 +167,7 @@
     }
 
     blockquote.pullquote:before {
-      -webkit-text-fill-color: var(--pink);
+      -webkit-text-fill-color: var(--primary-accent);
       content: "\201C";
       font-size: 8rem;
       line-height: 0.1rem;
@@ -190,7 +198,7 @@
   }
 
   abbr[title="Today I learned"] {
-    background-color: var(--blue);
+    background-color: var(--secondary-accent);
     border-radius: 0.12em;
     color: #fff;
     display: inline-block;
@@ -202,7 +210,8 @@
   pre {
     background-color: #111;
     border-radius: 0.12em;
-    box-shadow: 5px 5px 0 var(--pink), 10px 10px 0 var(--blue);
+    box-shadow: 5px 5px 0 var(--primary-accent),
+      10px 10px 0 var(--secondary-accent);
     color: #efefef;
     font-family: monospace;
     font-size: var(--step--1);
