@@ -23,7 +23,7 @@
     --step-huge: clamp(3.05rem, calc(6.05rem + 1.85vw), 8rem);
 
     --base-bg: hsl(50, 45%, 87%);
-    --body-text: #4c3e45;
+    --body-text: hsl(330, 10%, 38%);
     --primary-accent: hsl(331, 84%, 72%);
     --secondary-accent: hsl(188, 93%, 42%);
     --secondary-accent-transparent: hsl(188, 93%, 37%, 10%);
@@ -59,7 +59,7 @@
   }
 
   a {
-    color: black;
+    color: var(--body-text);
     text-decoration-color: var(--primary-accent);
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
