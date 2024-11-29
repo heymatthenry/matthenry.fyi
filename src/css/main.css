@@ -167,15 +167,16 @@
       background: linear-gradient(
         0.25turn,
         var(--primary-accent),
-        var(--primary-accent)
+        var(--secondary-accent)
       );
       color: transparent;
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: "Work Sans", sans-serif;
-      font-size: 1.4rem;
+      font-size: var(--step-2);
       font-weight: 600;
+      line-height: 2.2rem;
       position: relative;
     }
 
