@@ -4,6 +4,7 @@
 
 @layer mh {
   :root {
+    color-scheme: light dark;
     --sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir,
       segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
       arial, sans-serif;
@@ -23,7 +24,16 @@
     --step-huge: clamp(3.05rem, calc(6.05rem + 1.85vw), 8rem);
 
     --base-bg: hsl(50, 45%, 87%);
-    --body-text: hsl(330, 10%, 38%);
+    --body-text-l: 38%;
+
+    @media (prefers-color-scheme: dark) {
+      --body-text-l: 82%;
+    }
+    /* 
+    Do this instead when it's better supported:
+    --body-text-l: light-dark(38%, 82%)l 
+    */
+    --body-text: hsl(330, 10%, var(--body-text-l));
     --primary-accent: hsl(331, 84%, 72%);
     --secondary-accent: hsl(188, 93%, 42%);
     --secondary-accent-transparent: hsl(188, 93%, 37%, 10%);
@@ -31,7 +41,6 @@
 
     --gradient-start: var(--primary-accent);
     --gradient-end: var(--secondary-accent);
-    color-scheme: light dark;
   }
 
   header,
@@ -59,7 +68,7 @@
   }
 
   a {
-    color: var(--body-text);
+    color: light-dark(var(--body-text-light, --body-text-dark));
     text-decoration-color: var(--primary-accent);
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
