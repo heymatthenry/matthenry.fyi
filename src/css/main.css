@@ -1,6 +1,7 @@
 @layer normalize, mh;
 
-@import "normalize.css" layer(normalize);
+/* do this in a more performant way if you're not gonna use a buld tool */
+@import "./normalize.css" layer(normalize);
 
 @layer mh {
   :root {
