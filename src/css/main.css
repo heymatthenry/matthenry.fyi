@@ -5,7 +5,7 @@
 
 @layer mh {
   :root {
-    color-scheme: light dark;
+    /* color-scheme: light dark; */
     --sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir,
       segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
       arial, sans-serif;
@@ -27,12 +27,9 @@
     --base-bg: hsl(50, 45%, 87%);
     --body-text-l: 38%;
 
-    @media (prefers-color-scheme: dark) {
-      --body-text-l: 82%;
-    }
     /* 
     Do this instead when it's better supported:
-    --body-text-l: light-dark(38%, 82%)l 
+    --body-text-l: light-dark(38%, 82%);
     */
     --body-text: hsl(330, 10%, var(--body-text-l));
     --primary-accent: hsl(331, 84%, 72%);
@@ -51,7 +48,7 @@
   }
 
   .site-title,
-  article > :not(.full-bleed) {
+  article> :not(.full-bleed) {
     grid-column: 2;
   }
 
@@ -66,14 +63,10 @@
     color: var(--body-text);
     font-family: var(--sans-serif);
     padding-block-start: 2rem;
-
-    @media (prefers-color-scheme: dark) {
-      background-color: hsl(0, 0%, 15%);
-    }
   }
 
   a {
-    color: light-dark(var(--body-text-light, --body-text-dark));
+    color: var(--body-text-light);
     text-decoration-color: var(--primary-accent);
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
@@ -84,11 +77,9 @@
   }
 
   a:hover {
-    background: linear-gradient(
-      0.25turn,
-      var(--gradient-start),
-      var(--gradient-end)
-    );
+    background: linear-gradient(0.25turn,
+        var(--gradient-start),
+        var(--gradient-end));
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -165,11 +156,9 @@
     }
 
     blockquote.pullquote {
-      background: linear-gradient(
-        0.25turn,
-        var(--primary-accent),
-        var(--secondary-accent)
-      );
+      background: linear-gradient(0.25turn,
+          var(--primary-accent),
+          var(--secondary-accent));
       color: transparent;
       -webkit-background-clip: text;
       background-clip: text;
