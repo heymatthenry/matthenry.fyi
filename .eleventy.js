@@ -17,7 +17,7 @@ export default function (eleventyConfig) {
     type: "atom",
     outputPath: "/feed.xml",
     collection: {
-      name: "posts",
+      name: "post",
       limit: 10,
     },
     metadata: {
