@@ -5,9 +5,13 @@
   <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="generator" content="{{ eleventy.generator }}">
-	<title>{{ title }}</title>
+	<title>{{ ['Mischief & Craft', title] | join(' - ') }}</title>
+  <meta property="og:title" content="{{ ['Mischief & Craft', title] | join(' - ') | escape }}"/>
+  <meta property="og:url" content="{{ ['https://matthenry.fyi', page.url] | join | escape }}" />
+  <meta property="og:description" content="{{ description | escape }}" />
+  <meta property="og:type" content="article" />
 	<link rel="stylesheet" href="/css/main.css">
-    <link
+  <link
     rel="alternate"
     type="application/atom+xml"
     href="/feed.xml"
