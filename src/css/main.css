@@ -32,8 +32,8 @@
     --body-text-l: light-dark(38%, 82%);
     */
     --body-text: hsl(330, 10%, var(--body-text-l));
-    --primary-accent: hsl(331, 84%, 72%);
-    --secondary-accent: hsl(188, 93%, 42%);
+    --primary-accent: hsl(331, 68%, 60%);
+    --secondary-accent: hsl(188, 63%, 42%);
     --secondary-accent-transparent: hsl(188, 93%, 37%, 10%);
     --primary-accent-transparent: hsl(331, 84%, 52%, 10%);
 
