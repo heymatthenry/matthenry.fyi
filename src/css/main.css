@@ -48,9 +48,23 @@
     grid-template-columns: 1fr min(80%, 42rem) 1fr;
   }
 
+  .main-nav {
+    grid-column: 1 / span 3;
+
+    ul {
+      display: flex;
+      font-size: var(--step-2);
+      gap: 1rem;
+      justify-content: flex-end;
+      list-style: none;
+      margin: 0;
+      padding: 0 2rem;
+    }
+  }
+
   .site-title,
-  article> :not(.full-bleed),
-  footer>* {
+  article > :not(.full-bleed),
+  footer > * {
     grid-column: 2;
   }
 
@@ -79,9 +93,11 @@
   }
 
   a:hover {
-    background: linear-gradient(0.25turn,
-        var(--gradient-start),
-        var(--gradient-end));
+    background: linear-gradient(
+      0.25turn,
+      var(--gradient-start),
+      var(--gradient-end)
+    );
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -142,7 +158,7 @@
     margin-block-end: 0;
   }
 
-  article h4+p {
+  article h4 + p {
     margin-block-start: 1rem;
   }
 
@@ -163,9 +179,11 @@
     }
 
     blockquote.pullquote {
-      background: linear-gradient(0.25turn,
-          var(--primary-accent),
-          var(--secondary-accent));
+      background: linear-gradient(
+        0.25turn,
+        var(--primary-accent),
+        var(--secondary-accent)
+      );
       color: transparent;
       -webkit-background-clip: text;
       background-clip: text;
