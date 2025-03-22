@@ -4,12 +4,20 @@
 @import "./normalize.css" layer(normalize);
 
 @layer mh {
+  @font-face {
+    font-family: CrimsonPro;
+    src: url(/fonts/CrimsonPro-VariableFont_wght.woff2) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
   :root {
     /* color-scheme: light dark; */
     --sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir,
       segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
       arial, sans-serif;
-    --serif: "Crimson Pro", Iowan Old Style, Apple Garamond, Baskerville,
+    --serif: CrimsonPro, Iowan Old Style, Apple Garamond, Baskerville,
       Times New Roman, Droid Serif, Times, Source Serif Pro, serif,
       Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
     --mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
@@ -78,7 +86,6 @@
       inset 0px 10px 0px var(--secondary-accent);
     color: var(--body-text);
     font-family: var(--serif);
-    font-display: swap;
     padding-block-start: 2rem;
   }
 
