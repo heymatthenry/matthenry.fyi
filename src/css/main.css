@@ -87,6 +87,7 @@
     color: var(--body-text);
     font-family: var(--serif);
     padding-block-start: 2rem;
+    padding-block-end: 2rem;
   }
 
   a {
@@ -254,5 +255,24 @@
     font-size: var(--step--1);
     overflow-x: auto;
     padding: 1rem;
+  }
+
+  footer section {
+    display: flex;
+
+    p {
+      margin: 0;
+      width: 50%;
+    }
+
+    ul {
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-end;
+      list-style: none;
+      width: 50%;
+      margin: 0;
+      padding: 0;
+    }
   }
 }
