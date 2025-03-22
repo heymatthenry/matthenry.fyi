@@ -12,6 +12,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("./src/css/");
   eleventyConfig.addPassthroughCopy("./src/css/");
+  eleventyConfig.addPassthroughCopy("./src/fonts/");
 
   eleventyConfig.addPlugin(feedPlugin, {
     type: "atom",
