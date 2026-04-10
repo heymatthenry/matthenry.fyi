@@ -46,6 +46,6 @@ Given that it appears that assistive tech can only present one of these navigati
 
 Conversely, if you have a set of concise FAQs, maybe that's a place where it could make sense to use a listy accordion (yes I know FAQs are an anti-pattern but I also know we have often to build them anyway).
 
-## Wrapping up
+### Wrapping up
 
 I think this either/or scenario is probably the way to go, but of course any time you have to rely on documentation to do the heavy lifting of ensuring that people use components as intended, you can only be as clear as possible and hope for the best. There are tooling-related ways to buttress the documentation, but at the end of the day, this is a human-facing problem with human-facing solutions. On the bright side, any day you get to dig into specs at work is a good day, right?
