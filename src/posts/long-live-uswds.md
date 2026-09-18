@@ -11,7 +11,7 @@ This week, the last remaining member of the USWDS team was forced out of their r
 
 This is a rapidly developing situation, and my thoughts aren't as organized as I'd like (though putting them here is, in part, a way to fix that). I apologize up front if any of this isn't fully baked. But what follows is a recap of how we got here, my assessment of the current state of things, and finally a brief look ahead.
 
-## A short history of how we got here
+### A short history of how we got here
 
 Here's a quick(-ish) rundown of the recent history of USWDS as I experienced it. I'm speaking for myself here and any errors or omissions are due to my own addled brain.
 
@@ -31,7 +31,7 @@ In November of 2025, I left GSA shortly after returning from furlough, so from t
 
 Then in August, USWDS's product lead and only full-time team member (Fed or otherwise) was placed on administrative leave by TTS's new director, Sam Corcos. A couple weeks later, all of the open source contributors and maintainers were booted out of the repo, the product lead was "officially" ousted ([fired by diff](https://github.com/uswds/uswds/commit/c11d2ad42fd8d2c8dcdacee931fbac78f214e6ef#diff-393e4aae2d355a937ead0caae1b909035a5c2901edd0554036d482aac053ad7dL17)), [corcos installed Ryan Parker as USWDS Lead](https://www.nextgov.com/people/2026/09/gsas-web-design-system-head-replaced-treasury-ai-engineer/416035/?oref=ng-skybox-hp).
 
-## USWDS enters its slop era
+### USWDS enters its slop era
 
 It wasn't immediately clear what Corcos and Parker intended to do with USWDS. My assumption was that they'd simply replace it with a shadcn theme, as that had been the rumored approach in the early NDS days. Instead, Parker threw AI at every corner of the project. It started small with a [pull request to add automated PR reviews](https://github.com/uswds/uswds/pull/6920), but then took off at AI scale. Some highlights of the AI takeover of USWDS:
 
@@ -56,7 +56,7 @@ While USWDS has always benefited from the user community submitting use cases fo
 
 There are more examples, and I'm sure more big picture takeaways here, but I believe this gives a sense of how quickly things have deteriorated.
 
-## So now what?
+### So now what?
 
 No one should use nu-SWDS. Or at least, if you choose to use it, you should understand that it is no longer the project it used to be, and you will not have the same assurance of accessibility or usability that you used to have. It won't have been tested with real users, and it won't have been battle-tested on thousands of .gov sites. If I can repurpose a line I used on bluesky, it's the private equity husk of USWDS.
 
