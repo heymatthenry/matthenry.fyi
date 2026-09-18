@@ -1,8 +1,8 @@
 ---
 tags: ['post']
-title: 18F 🫡
+title: USWDS is dead. Long live USWDS.
 date: 2026-09-16
-description: USWDS is dead. Long live USWDS.
+description: Some observations on a fast-moving calamity
 ---
 
 *tl;dr: the US Web Design System has been functionally taken over by DOGE or a DOGE-aligned group. Its code and community are now being run by AI, and its current form does not deserve the hard-earned trust USWDS built over its first 10 years. Efforts are underway to preserve the pre-AI state, and hopefully to continue development of this critical digital public infrastructure.*
