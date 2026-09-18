@@ -1,7 +1,7 @@
 ---
 tags: ['post']
 title: USWDS is dead. Long live USWDS.
-date: 2026-09-16
+date: 2026-09-18
 description: Some observations on a fast-moving calamity
 ---
 
