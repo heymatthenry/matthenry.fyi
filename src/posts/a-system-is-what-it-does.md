@@ -5,7 +5,7 @@ date: 2026-09-30
 description: A comparison of how two design systems handle the humble text component
 ---
 
-The US Web Design System is about to get a radical overhaul. We don't know yet what that overhaul is going to entail, but I think there's a decent chance that it's going to involve a move to `shadcn/ui` from vanilla HTML/CSS/JS. 
+The US Web Design System is [about to get a radical overhaul](/posts/long-live-uswds/). We don't know yet what that overhaul is going to entail, but I think there's a decent chance that it's going to involve a move to `shadcn/ui` from vanilla HTML/CSS/JS. 
 
 I think that for a couple of reasons. First, while I was still on the USWDS team, shadcn was the rumored choice for its replacement in the early days after the National Design Studio was created. I never heard this from any of them, because they never talked to us directly, but it's what I heard through the grapevine. Also, the AI-ification of USWDS is well underway, and shadcn is a popular choice of the vibecoding crowd.
 
