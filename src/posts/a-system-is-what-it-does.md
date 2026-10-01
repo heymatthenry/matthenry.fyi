@@ -1,11 +1,11 @@
 ---
-tags: ['post']
+tags: ["post"]
 title: A design system is what it does
 date: 2026-09-30
 description: A comparison of how two design systems handle the humble text component
 ---
 
-The US Web Design System is [about to get a radical overhaul](/posts/long-live-uswds/). We don't know yet what that overhaul is going to entail, but I think there's a decent chance that it's going to involve a move to `shadcn/ui` from vanilla HTML/CSS/JS. 
+The US Web Design System is [about to get a radical overhaul](/posts/long-live-uswds/). We don't know yet what that overhaul is going to entail, but I think there's a decent chance that it's going to involve a move to `shadcn/ui` from vanilla HTML/CSS/JS.
 
 I think that for a couple of reasons. First, while I was still on the USWDS team, shadcn was the rumored choice for its replacement in the early days after the National Design Studio was created. I never heard this from any of them, because they never talked to us directly, but it's what I heard through the grapevine. Also, the AI-ification of USWDS is well underway, and shadcn is a popular choice of the vibecoding crowd.
 
@@ -15,17 +15,19 @@ I think shadcn is a bad fit for most government websites for a lot of reasons, b
 
 ### Defaults as destiny
 
-USWDS was created primarily for government sites composed of text and forms. This makes sense because government sites are mostly text and forms! 
+USWDS was created primarily for government sites composed of text and forms. This makes sense because government sites are mostly text and forms!
 
 Defaults are a good place to start if you want to know what a system was designed to do, so let's look at the typography on shadcn's "Typeset" page with the default settings:
 
+![A screenshot of the shadcn typeset documentation showing what is described in the following paragraph](/img/shadcn-typeset.jpg)
+
 It's clean, and it has a pretty clear hierarchy. The main body text is pretty small, though. If i pick a line that looks like it's about the full width of the column, in USWDS that's about 68 characters (which makes sense given the 68ex max-inline-size). In shadcn, it's 83 characters. That's a pretty big difference! But what kind of difference does it make?
 
-More characters per line makes the information more dense and less scannable. It's also harder to read for lower vision users. Right away, those are two big distinctions between USWDS and shadcn in what they're supposed to do and whom they're supposed to be for. 
+More characters per line makes the information more dense and less scannable. It's also harder to read for lower vision users. Right away, those are two big distinctions between USWDS and shadcn in what they're supposed to do and whom they're supposed to be for.
 
 Obviously you can make big text using shadcn and you can make small text with USWDS, but those are intentional changes you have to make. What I'm interested in here is what the ergonomics of each system drives you towards: what kinds of experiences you design and what kinds of users you center. What I'm proposing is that if you choose shadcn, it's because you aren't intending to build sites that primarily deliver information. Without putting too fine a point on it, that would be a pretty big change in what most .gov sites do, and so it seems like the kind of change one oughtn't to make without following the implications all the way through.
 
-I mentioned that moving from traditional USWDS to something based on shadcn would signal a change in *what* government websites are for but it's also a change in *who* they're for. I'm not going to go super deep on accessibility here, but it's worth taking a beat to highlight that small text with more characters per line assumes (at least) a few things about the user reading that text. It assumes:
+I mentioned that moving from traditional USWDS to something based on shadcn would signal a change in _what_ government websites are for but it's also a change in _who_ they're for. I'm not going to go super deep on accessibility here, but it's worth taking a beat to highlight that small text with more characters per line assumes (at least) a few things about the user reading that text. It assumes:
 
 1. Their eyes are able to read that small type without too much difficulty;
 2. They are able to keep more information per line in working memory; and
