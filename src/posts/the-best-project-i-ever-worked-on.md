@@ -45,7 +45,7 @@ Making something that worked for all of theses users required lots of interviews
 
 At the end of a few sprints, we had a great prototype of a new interface to this massive store of data. And we knew it would work really well for a wide range of users, because we'd asked a lot of them. All in all, this was about 90 days of work, and it helped the agency set a course for the next several years of development on this project. For me, it showed how much a small cross-functional team could do
 
-* Find a product owner who can be a real part of your team, and get them as invlolved as you can.
+* Find a product owner who can be a real part of your team, and get them as involved as you can.
 * Get real, working code in front of users as soon as you can.
 * Do as many interviews as you can with real users. Until you get something in front of users, you might have ideas about what can work, but you don't actually *know* anything.
 
@@ -53,4 +53,4 @@ As excited as I was to join 18F, I admit that before this project I didn't fully
 
 I'm grateful I got to work on this project, and a bunch more like it during my time at 18F. And while I'm sorry to end this post on a bummer note, revisiting this just drives home for me just what how much was lost when 18F was shuttered.
 
-Also, if you want to learn more about these pracices so you can use them in your own work, the former 18F team rescued [all the 18F Guides](https://18f.org/guides/) and added them to 18F.org.
+Also, if you want to learn more about these practices so you can use them in your own work, the former 18F team rescued [all the 18F Guides](https://18f.org/guides/) and added them to 18F.org.
